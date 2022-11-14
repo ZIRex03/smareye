@@ -1,0 +1,381 @@
+.scrollup {
+    width: 70px;
+    height: 70px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 50px;
+    margin-left: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../images/icon_top.png') no-repeat;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+
+
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 30px;
+    border-bottom: 4px solid orange;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    margin: left;
+    width: 200px;
+    padding-top: 30px;
+    border-bottom: 4px solid orange;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+
+    background-color: black;
+
+}
+
+.header__inner {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nazad__link {
+    display: inline-block;
+    padding: 6px 6px;
+    border-top: 2px solid yellow !important;
+
+    border-right: 2px solid yellow !important;
+
+    margin: 3px 0 0 5px;
+
+    transform: rotate(-135deg);
+
+}
+
+.nazad__text {
+    display: inline-block;
+    padding: 6px 6px;
+    border: 3px, solid, black;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 4px;
+    margin-left: -880px;
+    text-decoration: none;
+    color: white;
+}
+
+.nazad__text:hover {
+    color: orange;
+}
+
+.nazad__text:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: orange;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nazad__text:hover:after {
+    display: block;
+}
+
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+    color: orange;
+}
+
+.nav__link:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: orange;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__link:hover:after {
+    display: block;
+}
+
+.intro__osn {
+    margin-top: 60px;
+    width: 100%;
+    height: 350vh;
+    display: flex;
+    background-color: black;
+    -webkit-background-size: cover;
+    background-size: 100%;
+
+}
+
+.intro__inner {
+
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+   
+}
+
+.osnov_text{
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text__padding{
+    border: 0px 0px 5px 5px;
+    border-color: white;
+}
+
+.main__info{
+
+    font-size: 20px;
+    color: white;
+}
+
+.osnov_text2{
+    margin-top: 90px;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main__info2{
+
+    font-size: 20px;
+    color: white;
+}
+
+.shablon{
+    width: 250px;
+    height: 250px;
+}
+
+.shablon_main{
+    width: 450px;
+    height: 300px;
+    margin-left: 200px;
+}
+
+.shablon2{
+    margin-top: 20px;
+    width: 450px;
+    height: 350px;
+}
+
+.shablon_main2{
+    width: 450px;
+    height: 330px;
+    margin-left: 200px;
+}
+
+.shablon3{
+    margin-top: 50px;
+    width: 550px;
+    height: 350px;
+}
+
+.shablon_main3{
+    width: 550px;
+    height: 350px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:420px){
+
+    /* * {
+        border: 1px solid red;
+        box-sizing: border-box;
+    } */
+
+    .scrollup {
+        width: 70px;
+        height: 70px;
+        opacity: 0.3;
+        position: fixed;
+        bottom: 50px;
+        margin-left: 10px;
+        display: none;
+        text-indent: -9999px;
+        background: url(../images/icon_top.png) no-repeat;
+    }
+
+    h2::after{
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        padding-top: 30px;
+        border-bottom: 4px solid orange;
+    }
+
+    .nazad__text {
+        display: inline-block;
+        padding: 6px 6px;
+        border: 3px, solid, black;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: -90px;
+        position: relative;
+        margin-top: 4px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .intro__osn {
+        margin-top: 60px;
+        width: 100%;
+        height: 380vh;
+        display: flex;
+        background-color: black;
+        -webkit-background-size: cover;
+        background-size: 100%;
+    
+    }
+
+    .osnov_text {
+        margin-top: 80px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main__info {
+        font-size: 15px;
+        color: white;
+    }
+
+    .osnov_text2 {
+        margin-top: 90px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .main__info2 {
+        font-size: 15px;
+        color: white;
+    }
+
+    .shablon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .shablon_main {
+        width: 250px;
+        height: 150px;
+        margin-left: 10px;
+    }
+
+    .shablon2 {
+        margin-top: 20px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .shablon_main2 {
+        width: 250px;
+        height: 150px;
+        margin-left: 100px;
+    }
+
+    .shablon3 {
+        margin-top: 50px;
+        width: 350px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    .shablon_main3 {
+        width: 350px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+}
+

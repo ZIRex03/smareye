@@ -1,0 +1,993 @@
+ /* * {
+        border: 1px solid red;
+        box-sizing: border-box;
+    } */
+
+.scrollup {
+    width: 70px;
+    height: 70px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 50px;
+    margin-left: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../images/icon_top.png') no-repeat;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+*,
+*:before,
+*:after {
+
+
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* background: url("../images/back2.png") center repeat-y; */
+    background-color: black;
+    -webkit-background-size: cover;
+    background-size: 100%;
+
+}
+
+.intro__inner {
+
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__title {
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 280px;
+    text-align: left;
+    color: white;
+}
+
+
+.kor_logo {
+    margin-top: -30px;
+    float: right;
+    width: 500px;
+    height: 220px;
+    border: 2px solid rgb(229, 65, 19);
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 4px blue;
+}
+
+.kor_link {
+
+    padding: 70px, 15px;
+    width: 160px;
+    height: 45px;
+    padding-left: 10px;
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 12px;
+    margin-top: 60px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.kor_text {
+    font-size: 20px;
+    color: orange;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.kor_but {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 13px;
+    margin-top: 5px;
+    color: black;
+}
+
+.intro__suptitle {
+    margin-bottom: 30px;
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: #050349;
+}
+
+
+
+.suptitle {
+
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 880px;
+    margin: 60px 180px 0px;
+    justify-content: space-between;
+}
+
+.suptitle_text {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.botton_h {
+    display: inline-block;
+    padding: 3px 10px;
+    border: 3px solid blue;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.botton_h:hover {
+    background: yellow;
+    color: blue;
+}
+
+.suptitle1 {
+
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 880px;
+    margin: 5px 180px 0px;
+    justify-content: space-between;
+}
+
+.suptitle1_text {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.botton_h1 {
+    display: inline-block;
+    padding: 3px 10px;
+    border: 3px solid blue;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.botton_h1:hover {
+    background: yellow;
+    color: blue;
+}
+
+.header {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: auto;
+    background-color: black;
+
+}
+
+.header__inner {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+    color: orange;
+}
+
+.nav__link:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: orange;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__link:hover:after {
+    display: block;
+}
+
+.osnova {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+
+    /* background: url("../images/osnov_in.jpg") center no-repeat; */
+    background-color: black;
+    justify-content: space-between;
+}
+
+.osnova2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+    /* background: url("../images/osnov_in.jpg") center no-repeat; */
+    background-color: black;
+    justify-content: space-between;
+}
+
+.osnova_inner {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_inner {
+    margin-top: 20px;
+    padding: 70px, 15px;
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+    border: 2px solid red;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: black;
+    box-shadow: 0px 10px 20px 0px rgb(121, 65, 198);
+}
+
+.project_innerposl {
+    margin-top: 20px;
+    padding: 70px, 15px;
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+    border: 2px solid red;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: black;
+    box-shadow: 0px 10px 20px 0px orange;
+}
+
+.but_img {
+    width: 98px;
+    height: 98px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.project_but {
+    display: inline-block;
+    margin-left: 17px;
+    color: white;
+}
+
+.photo__button {
+    opacity: 1;
+    visibility: hidden;
+    position: absolute;
+}
+
+.photo__buttoninput {
+    color: white;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.photo__buttonimage {
+    margin-left: -80px;
+    margin-top: 60px;
+    border: 3px solid white;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.but2_img {
+    width: 98px;
+    height: 98px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.project_but2 {
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.but3_img {
+    width: 115px;
+    height: 98px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.project_but3 {
+    margin-top: -30px;
+    display: inline-block;
+    margin-left: 6px;
+    color: white;
+}
+
+.but4_img {
+    width: 98px;
+    height: 98px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.project_but4 {
+    display: inline-block;
+    margin-left: 4px;
+    color: white;
+}
+
+.osnova2_inner {
+    padding-top: 70px;
+    padding-left: 180px;
+    padding-right: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.but5_img {
+    width: 98px;
+    height: 98px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.project_but5 {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+}
+
+.but6_img {
+    width: 98px;
+    height: 98px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.project_but6 {
+    display: inline-block;
+    margin-left: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.osnova3_inner {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-color: black;
+}
+
+.d1 {
+    margin: 0 auto;
+    left: calc(50%);
+    width: 400px;
+    height: 350px;
+    background: none;
+    border: 25px solid white;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.d2 {
+    position: absolute;
+    margin-left: 320px;
+    margin-top: -30px;
+    width: 200px;
+    height: 200px;
+    background: none;
+    border: 20px solid orange;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px yellow;
+}
+
+.d3 {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 180px;
+    width: 220px;
+    height: 220px;
+    background: none;
+    border: 20px solid blue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 5px blue;
+}
+
+.rectangle1 {
+
+    width: 150px;
+
+    height: 150px;
+
+    border: 3px solid orange;
+
+    border-radius: 20px;
+    margin-top: -60px;
+    margin-left: 60px;
+
+    background: black;
+}
+
+.rectangle2 {
+
+    width: 150px;
+
+    height: 150px;
+
+    border: 3px solid orange;
+
+    border-radius: 20px;
+    margin-top: 250px;
+    margin-left: 0px;
+
+    background: black;
+
+    position: absolute;
+}
+
+.rectangle {
+
+    width: 250px;
+
+    height: 360px;
+
+    border: 3px solid orange;
+    border-radius: 20px;
+
+    margin-top: -125px;
+    margin-left: -240px;
+
+    background: black;
+}
+
+.rectangle3 {
+
+    width: 150px;
+
+    height: 150px;
+    margin-top: -100px;
+    border: 3px solid orange;
+
+    border-radius: 20px;
+    margin-left: 350px;
+
+    background: black;
+
+    position: absolute;
+}
+
+.text_center {
+
+    color: #ffffff;
+
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.rect_img {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.osnova4_inner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    /* background: url("../images/osnov_in.jpg") center repeat-x; */
+    background-color: black;
+}
+
+button {
+
+    position: absolute;
+    margin-left: 10px;
+    background: black;
+}
+
+.vlevo__button {
+    cursor: pointer;
+    background-color: black;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -100px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg)
+}
+
+.vpravo__button {
+    cursor: pointer;
+    background-color: black;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 600px;
+    width: 50px;
+    height: 50px;
+}
+
+.zakaz-form {
+    opacity: 0;
+    position: absolute;
+    margin-left: 470px;
+    width: 600px;
+    height: 400px;
+    margin-top: 300px;
+    background: black;
+    transform: translateX(-250%);
+    transition: all .5s;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 5px 5px blue;
+}
+
+.cons-form {
+    opacity: 0;
+    position: absolute;
+    margin-left: 470px;
+    width: 600px;
+    height: 400px;
+    margin-top: 300px;
+    background: #000000;
+    transform: translateX(250%);
+    transition: all .5s;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 5px 5px blue;
+}
+
+.start-anim {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h1.proj__text::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 30px;
+    border-bottom: 4px solid orange;
+}
+
+.proj__text {
+
+    margin: 0 auto;
+    padding-top: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bot_telega {
+    width: 270px;
+    height: 270px;
+    border-radius: 20px;
+    margin-top: -40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.text_bot {
+    color: white;
+    font-size: 16px;
+    margin-top: 90px;
+
+}
+
+.text_info2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+@media screen and (max-width:420px) {
+
+
+
+    .scrollup {
+        width: 70px;
+        height: 70px;
+        opacity: 0.3;
+        position: fixed;
+        bottom: 50px;
+        margin-left: 10px;
+        display: none;
+        text-indent: -9999px;
+        background: url(../images/icon_top.png) no-repeat;
+    }
+
+    .intro {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+
+        /* background: url("../images/back2.png") center repeat-y; */
+        background-color: black;
+        -webkit-background-size: cover;
+        background-size: 100%;
+
+    }
+
+    .logo {
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .intro__title {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 280px;
+        text-align: left;
+        color: white;
+    }
+
+    .kor_logo {
+        float: right;
+        width: 160px;
+        height: 100px;
+        margin-top: -10px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 2px 2px blue;
+    }
+
+    .kor_link {
+        padding: 70px, 15px;
+        width: 112px;
+        height: 37px;
+        padding-left: 3px;
+        border: 2px solid orange;
+        background-color: orange;
+        border-radius: 12px;
+        margin-top: 60px;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .kor_text {
+        font-size: 14px;
+        color: orange;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .but_img {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+
+    .osnova {
+        height: 20vh;
+    }
+
+    .osnova2 {
+        height: 20vh;
+    }
+
+    .project_inner {
+
+        margin-top: 20px;
+        width: 91px;
+        height: 91px;
+        border: 2px solid red;
+        border-radius: 12px;
+        background-color: black;
+        box-shadow: 0px 5px 10px 0px rgb(121, 65, 198);
+        padding-right: 10px;
+    }
+
+    .project_innerposl {
+
+        margin-top: 20px;
+        width: 91px;
+        height: 91px;
+        border: 2px solid red;
+        border-radius: 12px;
+        background-color: black;
+        box-shadow: 0px 5px 5px 0px orange;
+    }
+
+    .project_but {
+        display: inline-block;
+        margin-left: 4px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .but2_img {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+
+    .project_but2 {
+        display: inline-block;
+        margin-left: 2px;
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .but3_img {
+        display: inline-block;
+        width: 60px;
+        height: 45px;
+        margin-left: 7px;
+        margin-top: 2px;
+    }
+
+    .project_but3 {
+        display: inline-block;
+        margin-left: 10px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .but4_img {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+
+    .project_but4 {
+        display: inline-block;
+        margin-left: 10px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .but5_img {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+
+    .project_but5 {
+        display: inline-block;
+        margin-left: 4px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .but6_img {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+
+    .project_but6 {
+        display: inline-block;
+        margin-left: 4px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .photo__buttoninput {
+        color: white;
+        display: inline-block;
+        margin-left: 15px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .photo__buttonimage {
+        max-width: 120px;
+        max-height: 100px;
+        margin-left: -10px;
+        margin-top: 60px;
+        border: 3px solid white;
+        border-radius: 6px;
+        background-color: white;
+    }
+
+
+    .proj__text {
+        margin: 0 auto;
+        padding-top: 100px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    h1.proj__text::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        padding-top: 30px;
+        border-bottom: 4px solid orange;
+    }
+
+    .cons-form {
+        opacity: 0;
+        position: absolute;
+        margin-left: 30px;
+        width: 290px;
+        height: 180px;
+        margin-top: 300px;
+        background: black;
+        transform: translateX(250%);
+        transition: all .5s;
+        border-radius: 20px;
+        border: 3px solid black;
+    }
+
+    .zakaz-form {
+        opacity: 0;
+        position: absolute;
+        margin-left: 30px;
+        width: 290px;
+        height: 180px;
+        margin-top: 300px;
+        background: black;
+        transform: translateX(-250%);
+        transition: all .5s;
+        border-radius: 20px;
+        border: 3px solid black;
+    }
+
+    .bot_telega {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        margin-top: -10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        float: left;
+    }
+
+    .text_bot {
+        color: white;
+        font-size: 8px;
+        margin-top: 30px;
+    }
+
+    button {
+        position: absolute;
+        margin-top: 10px;
+        cursor: pointer;
+        background: black;
+    }
+
+    .text_info2 {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .start-anim {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .vlevo__button {
+        transform: rotate(180deg);
+        margin-left: -45px;
+        margin-top: 60px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .vpravo__button {
+        margin-top: 60px;
+        margin-left: 280px;
+        width: 15px;
+        height: 15px;
+    }
+
+}

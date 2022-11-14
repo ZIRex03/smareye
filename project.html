@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+    
+            $('.scrollup').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+    
+        });
+    
+    </script>
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(function () {
+                $('.btn').click(function () {
+                    $('.switch-form').toggleClass('start-anim');
+    
+                });
+            });
+        });
+    
+    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logoza2.ru.png">
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>SmartEye</title>
+</head>
+
+<a href="#" class="scrollup">Наверх</a>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <a class="nazad__link" href="index.html"></a>
+                <a class="nazad__text" href="index.html">На главную</a>
+
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">О проекте</a>
+                    <a class="nav__link" href="indexcont.html">Контакты</a>
+                </nav>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="intro__osn">
+        <div class="container">
+            <div class="intro_inner">
+
+
+
+                <h1 class="osnov_text">Определение объектов на фото</h1>
+
+
+                <p class="main__info">Приходилось ли вам когда-нибудь долго вспоминать название объекта, который вы
+                    видите на фото? Или может быть вы часто имеете дело с необычными объектами, о которых хотели бы
+                    узнать больше. Но не знаете, как он называется. Наша команда использовала специальный алгоритм,
+                    который умеет определять находящиеся на фото объекты, выделяя и подписывая их.
+                    <br>
+                    <br>
+                    В алгоритме задействована большая база различных библиотек, помогающих сделать алгоритм определения
+                    более правильным и точным. Разберем подробнее этот алгоритм.
+                    <br>
+                    <br>
+                </p>
+
+                <h2 class="osnov_text2">Нахождение объекта</h2>
+
+                <p class="main__info2">
+
+                    Начнем с малого. Попробуем найти ранее заготовленный шаблон на фото. Возьмем фотографию с
+                    изображением одного котенка и найдем его среди остальных.
+                </p>
+
+
+                <img class="shablon" src="./assets/images/shablon.png">
+
+
+                <img class="shablon_main" src="./assets/images/shablon_osn.png">
+
+                <br>
+                <br>
+
+                <p class="main__info2">Здесь, левая картинка специальное значение, где есть схожесть шаблона с
+                    положением на картинке. Черная точка в ней это указатель на место, где схожесть шаблона с картинкой
+                    проявляется больше всего. На правой картинке это место выделено красным прямоугольником. </p>
+
+                <img class="shablon2" src="./assets/images/shablon2.png">
+
+
+                <img class="shablon_main2" src="./assets/images/shablonmain2.png">
+
+                <br>
+                <br>
+
+                <p class="main__info2">Но разве мы будем искать объекты на фото по шаблону? Здесь разобрана лишь небольшая часть работы алгоритма. Дальше мы убрали ограничения на посик шаблонов и дали ему "свободу воли". Благодаря подключенным библиотекам, алгоритм умеет распознавать очень много различных объектов. Когда он находит свопадение объекта на фото с тем, что у него есть в базе, он отмечает его и подписывает, чтобы нам было легче разобраться. 
+                    <br>
+                    Приведем финальный результат работы алгоритма. Мы взяли фотографию с различными объектами на фото, чтобы проверить работу нашего алгоритма.</p>
+
+
+                    <img class="shablon3" src="./assets/images/shablon3.jpg">
+
+
+                <img class="shablon_main3" src="./assets/images/shablonmain3.jpg">
+
+                <br>
+                <br>
+
+                <p class="main__info2">Как мы видим, алгоритм не смог определить все объекты. Один остался вне поля его зрения. Именно поэтому мы и дальше будем работать над нашим алгоритмом, чтобы он работал как можно точнее и качественнее.</p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

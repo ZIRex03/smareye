@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+    });
+
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(function () {
+            $('.btn').click(function () {
+                $('.switch-form').toggleClass('start-anim');
+
+            });
+        });
+    });
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logoza2.ru.png">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>SmartEye</title>
+</head>
+
+<a href="#" class="scrollup">Наверх</a>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <a class="nazad__link" href="index.html"></a>
+                <a class="nazad__text" href="index.html">На главную</a>
+
+                <nav class="nav">
+                    <a class="nav__link" href="project.html">О проекте</a>
+                    <a class="nav__link" href="indexcont.html">Контакты</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="intro2">
+        <h1 class="form__title1">НАША КОМАНДА</h1>
+        <div class="container">
+
+            <div class="kadupis-decung">
+                <div class="cumconevu">
+                    <div class="volupavum">
+                        <div class="vumkob-salovum">
+                            <img src="./assets/images/andre.jpg" alt="Ключевые слова">
+                        </div>
+                        <a class="vk_linkEgor" target="_blank" href="https://vk.com/v0lkin_andr3">Изъюров Андрей</a>
+                        <p class="role">frontend разработчик</p>
+                        <p>Отвечает за весь сайт и его работоспособность.</p>
+                    </div>
+                    <div class="volupavum">
+                        <div class="vumkob-salovum">
+                            <img src="./assets/images/ivan.jpg" alt="Ключевые фразы">
+                        </div>
+                        <a class="vk_linkEgor" target="_blank" href="https://vk.com/sader_went">Лузин Иван</a>
+                        <p class="role">backend разработчик</p>
+                        <p>Отвечает за Telegram-бота, который функционирует на этом сайте.</p>
+                    </div>
+                    <div class="volupavum">
+                        <div class="vumkob-salovum">
+                            <img src="./assets/images/egor.png" alt="Ключевое слово под изображение">
+                        </div>
+                        <a class="vk_linkEgor" target="_blank" href="https://vk.com/egoryasius">Фещенко Егор</a>
+                        <p class="role">Дизайнер</p>
+                        <p>Отвечает за создание дизайна для этого сайта.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="intro">
+        <h1 class="form__title">НАПИСАТЬ НАМ</h1>
+        <div class="wrapper">
+
+            <div class="form">
+                <form action="#" id="form" class="form__body">
+
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Имя*:</label>
+                        <input id="formName" type="text" name="name" class="form__input _req">
+                    </div>
+                    <div class="form__item">
+
+                        <label for="formEmail" class="form__label">E-mail*:</label>
+                        <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Сообщение</label>
+                        <textarea name="message" id="formMessage" class="form__input"></textarea>
+
+                    </div>
+
+                    <div class="form__item">
+
+                        <div class="form__label">Прикрепить фото</div>
+                        <div class="file">
+                            <div class="file__item">
+                                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+                                    class="file__input">
+                                <div class="file__button">Выбрать</div>
+                            </div>
+                            <div id="formPreview" class="file__preview"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+
+</html>
